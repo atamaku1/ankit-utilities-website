@@ -2,14 +2,19 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tamakuwalaa.com",
+  "proxy": "https://jsonplaceholder.typicode.com",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "postbuild": "aws s3 sync ~/Downloads/my-app/build/ s3://tamakuwalaa.com/ --acl public-read",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-snapshot": "^1.3.0"
   }
 }
