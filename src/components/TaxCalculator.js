@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const TaxCalculator = ({className})=>{
+const TaxCalculator = ()=>{
   const [rate, setRate] = useState("");
   const [tax, setTax] = useState("");
   const [total, setTotal] = useState("");
@@ -23,7 +23,7 @@ const TaxCalculator = ({className})=>{
     }
   }
   return (
-    <div className={`card ${className}`}>
+    <div className="card">
       <div className="card-body">
         <h5 className="card-title">Tax calculator</h5>
         <p className="card-text">Caculate tax and total for NY hotels.</p>

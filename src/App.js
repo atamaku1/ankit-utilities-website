@@ -1,6 +1,7 @@
 import React from 'react';
 import TaxCalculator from './components/TaxCalculator';
 import CurrentWeather from './components/CurrentWeather';
+import TipCaculator from './components/TipCalculator';
 
 function App() {
   return (
@@ -8,8 +9,9 @@ function App() {
       <nav className="nav justify-content-center">
         <h1>Ankit's utilities</h1>
       </nav>
-     <TaxCalculator className="mb-4"/>
+     <TaxCalculator/>
      <CurrentWeather/>
+     <TipCaculator/>
     </div>
   );
 }

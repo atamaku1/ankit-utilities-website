@@ -35,7 +35,7 @@ const CurrentWeather = () => {
                 <h5 className="card-title">Current Weather</h5>
                 <p className="card-text">Weather based on your location</p>
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-md-4">
                         <button type="button" className="btn btn-primary" onClick={getPosition}>Get weather details.</button>
                     </div>
                 </div>
