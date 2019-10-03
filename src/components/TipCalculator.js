@@ -43,13 +43,7 @@ const TipCaculator = ({ className }) => {
         </div>
         <div className="form-group">
           <label htmlFor="tipPercentage">Tip percentage</label>
-          <select className="form-control" id="tipPercentage" name="tipPercentage" value={tipPercentage} onChange={handleChange}>
-            <option value="15">15%</option>
-            <option value="20">20%</option>
-            <option value="25">25%</option>
-            <option value="30">30%</option>
-            <option value="35">35%</option>
-          </select>
+          <input className="form-control" id="tipPercentage" name="tipPercentage" value={tipPercentage} onChange={handleChange} />
         </div>
         <div className="form-group">
           <label htmlFor="tipValue">Tip amount</label>
